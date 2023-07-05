@@ -3,6 +3,8 @@ use gtk::{glib, Application, ApplicationWindow};
 const APP_ID: &str = "com.github.gtk-rs.examples.builder_basics";
 
 mod gui;
+mod grid;
+mod libs;
 
 fn main() -> glib::ExitCode {
     let application = gtk::Application::new(

@@ -1,7 +1,7 @@
 use gtk::prelude::*;
 use gtk::{Button, Box, ApplicationWindow};
 
-mod grid;
+use crate::grid;
 
 pub fn build_ui(window: &ApplicationWindow)
 {
@@ -55,5 +55,5 @@ pub fn build_ui(window: &ApplicationWindow)
 
     buttonbox.append(&buttonclose);
 
-    buildgrid(&grid, &buttonok, &buttonclose);
+    grid::buildgrid(&grid, &buttonok, &buttonclose);
 }
